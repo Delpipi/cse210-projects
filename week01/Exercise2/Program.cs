@@ -6,27 +6,109 @@ class Program
     {
         Console.Write("Enter grade percentage(%) ");
         string input = Console.ReadLine();
-        int grade = int.Parse(input);
+        int percent = int.Parse(input);
 
-        if (grade >= 90)
+        string letter = "";
+        string sign = "";
+
+        if (percent >= 90)
         {
-            Console.WriteLine("A");
+            letter = "A";
+            int lastDigit = percent % 10;
+
+            if (lastDigit >= 7)
+            {
+                sign = "+";
+            }
+            else if (lastDigit < 3)
+            {
+                sign = "-";
+            }
+            else
+            {
+                sign = "";
+            }
         }
-        else if (grade < 90 && grade >= 80)
+        else if (percent < 90 && percent >= 80)
         {
-            Console.WriteLine("B");
+            letter = "B";
+            int lastDigit = percent % 10;
+
+            if (lastDigit >= 7)
+            {
+                sign = "+";
+            }
+            else if (lastDigit < 3)
+            {
+                sign = "-";
+            }
+            else
+            {
+                sign = "";
+            }
         }
-        else if (grade < 80 && grade >= 70)
+        else if (percent < 80 && percent >= 70)
         {
-            Console.WriteLine("C");
+            letter = "C";
+            int lastDigit = percent % 10;
+
+            if (lastDigit >= 7)
+            {
+                sign = "+";
+            }
+            else if (lastDigit < 3)
+            {
+                sign = "-";
+            }
+            else
+            {
+                sign = "";
+            }
         }
-        else if (grade < 70 && grade >= 60)
+        else if (percent < 70 && percent >= 60)
         {
-            Console.WriteLine("D");
+            letter = "D";
+            int lastDigit = percent % 10;
+
+            if (lastDigit >= 7)
+            {
+                sign = "+";
+            }
+            else if (lastDigit < 3)
+            {
+                sign = "-";
+            }
+            else
+            {
+                sign = "";
+            }
         }
         else
         {
-            Console.WriteLine("F");
+            letter = "F";
+            int lastDigit = percent % 10;
+
+            if (lastDigit >= 7)
+            {
+                sign = "+";
+            }
+            else if (lastDigit < 3)
+            {
+                sign = "-";
+            }
+            else
+            {
+                sign = "";
+            }
+        }
+
+        if (percent >= 70)
+        {
+            Console.WriteLine($"Congratulation you passed with {letter}{sign} grade");
+        }
+        else
+        {
+            Console.WriteLine($"Sorry, You did not pass the class with {letter}{sign} grade");
         }
     }
 }
