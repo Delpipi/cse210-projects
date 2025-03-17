@@ -1,7 +1,8 @@
 using System;
 
-/* Exceed requirement:
-    - Save or load Entry from Json 
+/* for Exceed requirement: I implement save and load Entry from Json for
+that change member variable using _underscoreCamelCase by use properties
+with TitleCase
  */
 class Program
 {
