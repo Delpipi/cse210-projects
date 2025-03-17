@@ -1,6 +1,6 @@
 using System;
 
-/* for Exceed requirement: I implement save and load Entry from Json for
+/* for Exceed requirement: I implemented save and load Entry from Json for
 that change member variable using _underscoreCamelCase by use properties
 with TitleCase
  */
