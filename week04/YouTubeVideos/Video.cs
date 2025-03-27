@@ -39,6 +39,7 @@ public class Video
         }
     }
 
+    // Getters and Setters
     public string GetTitle()
     {
         return _title;

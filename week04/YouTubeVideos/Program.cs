@@ -12,14 +12,15 @@ class Program
         //VIDEO-1
         Video video1 = new Video("How to Make the Perfect Cup of Coffee", "CoffeeMaster101", 120);
         Comment comment1V1 = new Comment("BrewLover22", "This tutorial was super helpful! Now my coffee tastes amazing!");
-        video1.AddComment(comment1V1);
+        video1.AddComment(comment1V1); // first added
 
 
         Comment comment2V1 = new Comment("CaffeineQueen", "Finally, a video that shows the right coffee-to-water ratio. Thanks!");
-        video1.AddComment(comment2V1);
+        video1.AddComment(comment2V1); // 2 comment added
+
 
         Comment comment3V1 = new Comment("MorningJoe", "I tried it this morning. Works like a charm!");
-        video1.AddComment(comment3V1);
+        video1.AddComment(comment3V1); //3 comment added
 
         Comment comment4V1 = new Comment("WakeUpTime", "I love that you included tips on grinding the beans properly.");
         video1.AddComment(comment4V1);
@@ -76,6 +77,5 @@ class Program
             Console.WriteLine($"Comments ({video.NberOfComments()})");
             video.DisplayComments();
         }
-
     }
 }
