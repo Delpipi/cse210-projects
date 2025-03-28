@@ -26,7 +26,7 @@ public class Video
         _comments.Add(comment);
     }
 
-    public int NberOfComments()
+    public int GetNberOfComments()
     {
         return _comments.Count;
     }

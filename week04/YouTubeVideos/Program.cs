@@ -74,7 +74,7 @@ class Program
             Console.WriteLine($"Title: {video.GetTitle()}");
             Console.WriteLine($"Author: {video.GetAuthor()}");
             Console.WriteLine($"Length: {video.GetLength()} seconds");
-            Console.WriteLine($"Comments ({video.NberOfComments()})");
+            Console.WriteLine($"Comments ({video.GetNberOfComments()})");
             video.DisplayComments();
         }
     }
