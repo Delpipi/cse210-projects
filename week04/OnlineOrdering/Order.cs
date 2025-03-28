@@ -24,7 +24,7 @@ public class Order
 
     public double GetTotalPrice()
     {
-        double sum = _products.Sum(product => product.TotalCost());
+        double sum = _products.Sum(product => product.GetTotalCost());
 
         //Add shipping coast
         sum += GetShippingCost();

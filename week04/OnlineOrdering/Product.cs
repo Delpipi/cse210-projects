@@ -19,7 +19,7 @@ public class Product
     }
 
     //Members Functions
-    public double TotalCost()
+    public double GetTotalCost()
     {
         return _price * _quantity;
     }
