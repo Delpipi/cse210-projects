@@ -2,3 +2,6 @@
 
 # CA1050: Declare types in namespaces
 dotnet_diagnostic.CA1050.severity = suggestion
+
+# CS0114: Member hides inherited member; missing override keyword
+dotnet_diagnostic.CS0114.severity = error
